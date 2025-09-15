@@ -480,6 +480,30 @@
             }
         }
 
+
+        gsap.registerPlugin(ScrollTrigger);
+gsap.set(".section_heading h2", {
+	backgroundSize: "0%"
+});
+const textElements = gsap.utils.toArray(".section_heading h2");
+
+textElements.forEach((text) => {
+	gsap.fromTo(
+		text,
+		{ backgroundSize: "0%" },
+		{
+			backgroundSize: "100%",
+			ease: "none",
+			scrollTrigger: {
+				trigger: text,
+				start: "center 80%",
+				end: "center 50%",
+				scrub: true,
+			}
+		}
+	);
+});
+
         document.addEventListener("DOMContentLoaded", handleScroll);
     </script>
 

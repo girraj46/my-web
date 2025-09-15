@@ -5,16 +5,16 @@ let horizontalSection = document.querySelector('.Service_content');
 console.log(horizontalSection.scrollWidth);
 
 gsap.to('.Service_content', {
-    x: () => horizontalSection.scrollWidth * -1,
-    xPercent: 100,
-    scrollTrigger: {
-        trigger: '.Service_content',
-        start: 'center center',
-        end: '+=2000px',
-        pin: '.main',
-        scrub: true,
-        invalidateOnRefresh: true
-    }
+  x: () => horizontalSection.scrollWidth * -1,
+  xPercent: 100,
+  scrollTrigger: {
+    trigger: '.Service_content',
+    start: 'center center',
+    end: '+=2000px',
+    pin: '.main',
+    scrub: true,
+    invalidateOnRefresh: true
+  }
 });
 
 
@@ -82,63 +82,67 @@ function setActive(index) {
 
 var timeManagement = gsap.timeline()
 
-    timeManagement.from(".menu li", {
-        y: -100,
-        opacity: 0,
-        stagger: .1,
-        duration: .5,
-    })
-    
-    gsap.from(".mane-text div",{
-        y: -100,
-        opacity: 0,
-        stagger: .3,
-        duration: .5,
-    })
+timeManagement.from(".menu li", {
+  y: -100,
+  opacity: 0,
+  stagger: .1,
+  duration: .5,
+})
+
+gsap.from(".mane-text div", {
+  y: -100,
+  opacity: 0,
+  stagger: .3,
+  duration: .5,
+})
 
 
-    var cursor = $(".cursor"),
-    follower = $(".cursor-follower");
+gsap.from(".section_heading h2" , {
+  color
+})
+
+var cursor = $(".cursor"),
+  follower = $(".cursor-follower");
 
 var posX = 0,
-    posY = 0;
+  posY = 0;
 
 var mouseX = 0,
-    mouseY = 0;
+  mouseY = 0;
 
 TweenMax.to({}, 0.016, {
   repeat: -1,
-  onRepeat: function() {
+  onRepeat: function () {
     posX += (mouseX - posX) / 9;
     posY += (mouseY - posY) / 9;
-    
+
     TweenMax.set(follower, {
-        css: {    
+      css: {
         left: posX - 12,
         top: posY - 12
-        }
+      }
     });
-    
+
     TweenMax.set(cursor, {
-        css: {    
+      css: {
         left: mouseX,
         top: mouseY
-        }
+      }
     });
   }
 });
 
-$(document).on("mousemove", function(e) {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+$(document).on("mousemove", function (e) {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
 });
 
-$(".link").on("mouseenter", function() {
-    cursor.addClass("active");
-    follower.addClass("active");
+$(".link").on("mouseenter", function () {
+  cursor.addClass("active");
+  follower.addClass("active");
 });
-$(".link").on("mouseleave", function() {
-    cursor.removeClass("active");
-    follower.removeClass("active");
+$(".link").on("mouseleave", function () {
+  cursor.removeClass("active");
+  follower.removeClass("active");
 });
 
