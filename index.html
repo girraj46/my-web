@@ -20,10 +20,18 @@
 </head>
 
 <body>
-    <div class="cursor"></div>
-<div class="cursor-follower"></div>
-    <div class="main">
+    <!-- <div class="cursor"></div>
+<div class="cursor-follower"></div> -->
 
+    <div class="video">
+        <video class="w-100" muted loop autoplay>
+        <source class="w-100" src="assets/images/banner_video.mp4" type="video/mp4">
+      </video>
+        <!-- <video class="w-100" src="assets/images/web_video.mov"></video> -->
+    </div>
+
+
+    <div class="main">
         <!-- CURSOR CODE -->
          
         <header class="header d-inline-block w-100" id="header">
@@ -72,14 +80,24 @@
                     <div class="skills-icons">
                         <div class="circle"></div>
                         <div class="inner-arc arc"></div>
-                        <div class="outer-arc arc"></div>
+                        <!-- <div class="outer-arc arc"></div> -->
                         <div class="icon_box">
                             <div class="skills_icon_rotated position-relative w-100 h-100">
-                                <img src="assets/images/gsap.png" alt="GSAP" class="icon icon_1">
-                                <img src="assets/images/css.png" alt="CSS" class="icon icon_2">
-                                <img src="assets/images/html.png" alt="HTML" class="icon icon_3">
-                                <img src="assets/images/js.png" alt="JS" class="icon icon_4">
-                                <img src="assets/images/figma.png" alt="Figma" class="icon icon_5">
+                                <div class="icon icon_1">
+                                    <img src="assets/images/gsap.png" alt="GSAP">
+                                </div>
+                                <div class="icon icon_2">
+                                    <img src="assets/images/css.png" alt="CSS">
+                                </div>
+                                <div class="icon icon_3">
+                                    <img src="assets/images/html.png" alt="html" >
+                                </div>
+                                <div class="icon icon_4">
+                                    <img src="assets/images/js_icon.png" alt="java script" >
+                                </div>
+                                <div class="icon icon_5">
+                                    <img src="assets/images/figma.png" alt="Figma" >
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -371,7 +389,7 @@
             </div>
         </div>
         <!-- contact us  -->
-        <div id="contact" class="contact w-100 d-inline-block">
+        <div id="contact" class="contact w-100 d-inline-block mb-5">
             <div class="container">
                 <div class="section_heading">
                     <h2>Contact Us</h2>

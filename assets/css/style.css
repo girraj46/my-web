@@ -24,7 +24,7 @@ body {
     width: 100%;
     height: 100%;
     display: inline-block;
-    background: #000;
+    /* background: #000000d6; */
     font-family: lobsterregular;
     color: #fff;
     transition: .3s;
@@ -128,6 +128,26 @@ a:hover{
     opacity: 0.08;
 }
 
+.video{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.video::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+      background: #000000d6;
+
+}
+
 /* 
 ================================================
 Header css
@@ -176,8 +196,28 @@ hero css
     width: 100%;
     display: inline-block;
     -webkit-text-stroke: 1px white;
-}
+    background-color: grey;
+    animation: gradient_color 3s ease-in-out infinite alternate;
 
+}
+    
+@keyframes gradient_color  {
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: green;
+    }
+    50%{
+        background-color: blue;
+    }
+    75%{
+        background-color: white;
+    }
+    100%{
+        background-color: yellow;
+    }
+}
 
 
 
@@ -190,6 +230,7 @@ hero css
 Skills css
 ================================================
  */
+
 
 
 .skills {
@@ -206,6 +247,7 @@ Skills css
     min-width: 380px;
     min-height: 380px;
     margin-right: 100px;
+    margin-top: 40px;
 }
 
 
@@ -309,12 +351,9 @@ Skills css
     display: inline-block;
 }
 
-/* .skills_icon_rotated img{
-    width: 100px;
-    border-radius: 50%;
-    outline: 5px solid #272727;
-    padding: 4px;
-} */
+.scroll_image_block img{
+   height: 270px;
+}
 
 .skills_icon_rotated .icon.active{
     box-shadow: 0 0 10px #ddd;
@@ -438,10 +477,11 @@ Contact css
     z-index: 10;
     border-radius: 50%;
     outline: 5px solid #272727;
-    padding: 4px;
     transform: scale(.8);
     transition: .3s;
-    filter: brightness(.5);
+    filter: brightness(.3);
+    border-radius: 50%;
+    overflow: hidden;
 }
 .icon.active{
    transform: scale(1); 
@@ -487,4 +527,10 @@ img.icon.icon_1.active{
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%); 
     position: relative;
     z-index: -1;
+}
+.left_side_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
