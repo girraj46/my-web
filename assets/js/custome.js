@@ -47,7 +47,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const icons = document.querySelectorAll(".icon");
 const sections = document.querySelectorAll("section");
-// const wheel = document.querySelector(".skills_icon_rotate");
 
 sections.forEach((section, i) => {
   ScrollTrigger.create({
