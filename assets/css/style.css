@@ -392,8 +392,13 @@ Service css
     padding: 50px 40px;
     background: #00000038;
     border-radius: 38px;
-    color: #f6f2e8;
+    color: #ffffff;
     backdrop-filter: blur(6px);
+    transition: .3s;
+}
+.Service_content .card:hover{
+    background: #000000;
+    transform: translateY(-15px);
 }
 
 
