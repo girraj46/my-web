@@ -390,9 +390,10 @@ Service css
     align-items: stretch;
     width: 100%;
     padding: 50px 40px;
-    background: #6e4ce1;
+    background: #00000038;
     border-radius: 38px;
     color: #f6f2e8;
+    backdrop-filter: blur(6px);
 }
 
 
@@ -481,7 +482,7 @@ Contact css
     transition: .3s;
     filter: brightness(.3);
     border-radius: 50%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .icon.active{
    transform: scale(1); 
@@ -507,7 +508,9 @@ Contact css
 img.icon.icon_1.active{
     top: -30px;
 }
-
+.icon img{
+    border-radius: 50%;
+}
 .inner-arc{
   position: absolute;
     left: 55px;
@@ -515,7 +518,7 @@ img.icon.icon_1.active{
     height: 240px;
     border-radius: 50%;
     z-index: 9;
-    background-color: red;
+    background-color: #000000 ;
     top: 55px;
     outline: 40px solid #000000;
 }
