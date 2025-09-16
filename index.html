@@ -1,598 +1,619 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Beat</title>
-    <script src="assets/js/main-gsap.js"></script>
-    <script src="assets/js/scroll.js"></script>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/tweenmax.js"></script>
-    <link rel="stylesheet" href="assets/css/boostrap.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
-
-    <div class="video">
-        <video class="w-100" muted loop autoplay>
-            <source class="w-100" src="assets/images/banner_video.mp4" type="video/mp4">
-        </video>
-    </div>
-
-
-    <div class="main">
-        <!-- CURSOR CODE -->
-
-        <header class="header d-inline-block w-100" id="header">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Design Beat</title>
+      <script src="assets/js/main-gsap.js"></script>
+      <script src="assets/js/scroll.js"></script>
+      <script src="assets/js/jquery.js"></script>
+      <script src="assets/js/tweenmax.js"></script>
+      <link rel="stylesheet" href="assets/css/boostrap.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+   </head>
+   <body>
+      <div class="video">
+         <video class="w-100" muted loop autoplay>
+            <source class="w-100 h-100" src="assets/images/banner_video.mp4" type="video/mp4">
+         </video>
+      </div>
+      <div class="main">
+         <!-- CURSOR CODE -->
+         <header class="header d-inline-block w-100" id="header">
             <div class="container">
-                <div class="header_content d-flex align-items-center justify-content-between gap-3 py-3">
-                    <div class="logo">
-                        <a class="fs-1" href="#">Design Beat</a>
-                    </div>
-                    <ul class="menu d-flex align-items-center justify-content-between gap-3">
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#main_skills">Skills</a></li>
-                        <li><a href="#service">Our Service</a></li>
-                        <li><a href="#">Our Project</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
-                    <div class="toggle">
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill="#fff"
-                                    d="M22 18.005c0 .55-.446.995-.995.995h-8.01a.995.995 0 0 1 0-1.99h8.01c.55 0 .995.445.995.995M22 12c0 .55-.446.995-.995.995H2.995a.995.995 0 1 1 0-1.99h18.01c.55 0 .995.446.995.995m-.995-5.01a.995.995 0 0 0 0-1.99H8.995a.995.995 0 1 0 0 1.99z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+               <div class="header_content d-flex align-items-center justify-content-between gap-3 py-3">
+                  <div class="logo">
+                     <a class="fs-1" href="#">Design Beat</a>
+                  </div>
+                  <div class="menu">
+                    <ul class="d-flex align-items-center justify-content-between gap-3">
+                     <li><a href="#hero">Home</a></li>
+                     <li><a href="#main_skills">Skills</a></li>
+                     <li><a href="#service">Our Service</a></li>
+                     <li><a href="#">Our Project</a></li>
+                     <li><a href="#contact">Contact Us</a></li>
+                  </ul>
+                  </div>
+                  <div class="toggle">
+                     <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                           <path fill="#fff"
+                              d="M22 18.005c0 .55-.446.995-.995.995h-8.01a.995.995 0 0 1 0-1.99h8.01c.55 0 .995.445.995.995M22 12c0 .55-.446.995-.995.995H2.995a.995.995 0 1 1 0-1.99h18.01c.55 0 .995.446.995.995m-.995-5.01a.995.995 0 0 0 0-1.99H8.995a.995.995 0 1 0 0 1.99z" />
+                        </svg>
+                     </a>
+                  </div>
+               </div>
             </div>
-        </header>
-
-
-
-
-        <div id="hero" class="hero">
+         </header>
+         <div id="hero" class="hero">
             <div class="container">
-                <div class="hero_content">
-                    <h2 class="m-0 first_h2 text-start text-white">Your UI</h2>
-                    <h2 class="m-0 secound_h2 text-center text-white">Your Beat</h2>
-                    <h2 class="m-0 third_h2 text-end text-white">Our Design</h2>
-                    <p><span>Girraj Designer</span>(Design Beat)</p>
-                </div>
+               <div class="hero_content">
+                  <h2 class="m-0 first_h2 text-start text-white">Your UI</h2>
+                  <h2 class="m-0 secound_h2 text-center text-white">Your Beat</h2>
+                  <h2 class="m-0 third_h2 text-end text-white">Our Design</h2>
+                  <p><span>Girraj Designer</span>(Design Beat)</p>
+               </div>
             </div>
-        </div>
-
-
-
-        <div id="main_skills" class="main_skills">
+         </div>
+         <div id="main_skills" class="main_skills">
             <div class="container">
-                <div class="section_heading">
-                    <h2>Popular Skills</h2>
-                </div>
-                <div class="skills">
-                    <div class="skills-icons">
-                        <div class="circle"></div>
-                        <div class="inner-arc arc">
-                            <p class="w-100  h-100 d-flex align-items-center justify-content-center fs-1">Design Beat
-                            </p>
+               <div class="section_heading">
+                  <h2>Popular Skills</h2>
+               </div>
+               <div class="skills">
+                  <div class="skills-icons">
+                     <div class="circle"></div>
+                     <div class="inner-arc arc">
+                        <p class="w-100  h-100 d-flex align-items-center justify-content-center fs-1">Design Beat
+                        </p>
+                     </div>
+                     <!-- <div class="outer-arc arc"></div> -->
+                     <div class="icon_box">
+                        <div class="skills_icon_rotated position-relative w-100 h-100">
+                           <div class="icon icon_1">
+                              <img src="assets/images/gsap.png" alt="GSAP">
+                           </div>
+                           <div class="icon icon_2">
+                              <img src="assets/images/css.png" alt="CSS">
+                           </div>
+                           <div class="icon icon_3">
+                              <img src="assets/images/html.png" alt="html">
+                           </div>
+                           <div class="icon icon_4">
+                              <img src="assets/images/js_icon.png" alt="java script">
+                           </div>
+                           <div class="icon icon_5">
+                              <img src="assets/images/figma.png" alt="Figma">
+                           </div>
                         </div>
-                        <!-- <div class="outer-arc arc"></div> -->
-                        <div class="icon_box">
-                            <div class="skills_icon_rotated position-relative w-100 h-100">
-                                <div class="icon icon_1">
-                                    <img src="assets/images/gsap.png" alt="GSAP">
-                                </div>
-                                <div class="icon icon_2">
-                                    <img src="assets/images/css.png" alt="CSS">
-                                </div>
-                                <div class="icon icon_3">
-                                    <img src="assets/images/html.png" alt="html">
-                                </div>
-                                <div class="icon icon_4">
-                                    <img src="assets/images/js_icon.png" alt="java script">
-                                </div>
-                                <div class="icon icon_5">
-                                    <img src="assets/images/figma.png" alt="Figma">
-                                </div>
-                            </div>
+                     </div>
+                  </div>
+                  <div class="right_skills">
+                     <section>
+                        <div class="skills-content">
+                           <h2 class="mb-3">GSAP</h2>
+                           <div class="scroll_image_block  px-5 py-5 rounded-2">
+                              <p>
+                                 gsap.registerPlugin(ScrollTrigger);<br>
+                                 let horizontalSection = document.querySelector('.Service_content');<br>
+                                 console.log(horizontalSection.scrollWidth);<br>
+                                 gsap.to('.Service_content', {<br>
+                                 x: () => horizontalSection.scrollWidth * -1,<br>
+                                 xPercent: 100,<br>
+                                 scrollTrigger: {<br>
+                                 trigger: '.Service_content',<br>
+                                 start: 'center center',<br>
+                                 end: '+=2000px',<br>
+                                 pin: '.main',<br>
+                              </p>
+                              <!-- <img src="assets/images/gsap-image.png" alt=""> -->
+                           </div>
                         </div>
-                    </div>
-                    <div class="right_skills">
-                        <section>
-                            <div class="skills-content">
-                                <h2 class="mb-3">GSAP</h2>
-                                <div class="scroll_image_block">
-                                    <img src="assets/images/gsap-image.png" alt="">
-                                </div>
-                            </div>
-                        </section>
-
-                        <section>
-                            <div class="skills-content">
-                                <h2 class="mb-3">CSS</h2>
-                                <div class="scroll_image_block">
-                                    <img src="assets/images/css-image.png" alt="">
-                                </div>
-                            </div>
-                        </section>
-
-                        <section>
-                            <div class="skills-content">
-                                <h2 class="mb-3">HTML</h2>
-                                <div class="scroll_image_block">
-                                    <img src="assets/images/html-image.png" alt="">
-                                </div>
-                            </div>
-                        </section>
-
-                        <section>
-                            <div class="skills-content">
-                                <h2 class="mb-3">JavaScript</h2>
-                                <div class="scroll_image_block">
-                                    <img src="assets/images/js.png" alt="">
-                                </div>
-                            </div>
-                        </section>
-
-                        <section>
-                            <div class="skills-content">
-                                <h2 class="mb-3">Figma</h2>
-                                <div class="scroll_image_block">
-                                    <img src="assets/images/figma-image.jpg" alt="">
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-
+                     </section>
+                     <section>
+                        <div class="skills-content">
+                           <h2 class="mb-3">CSS</h2>
+                           <div class="scroll_image_block  px-5 py-5 rounded-2">
+                              <p>
+                                 * { <br>
+                                 box-sizing: border-box;<br>
+                                 margin: 0;<br>
+                                 padding: 0;<br>
+                                 }<br>
+                                 html,<br>
+                                 body {<br>
+                                 margin: 0;<br>
+                                 padding: 0;<br>
+                                 width: 100%;<br>
+                                 height: 100%;<br>
+                              </p>
+                              <!-- <img src="assets/images/css-image.png" alt=""> -->
+                           </div>
+                        </div>
+                     </section>
+                     <section>
+                        <div class="skills-content">
+                           <h2 class="mb-3">HTML</h2>
+                           <div class="scroll_image_block  px-5 py-5 rounded-2">
+                              <!-- <p></p> -->
+                              <img src="assets/images/html-image.png" alt="">
+                           </div>
+                        </div>
+                     </section>
+                     <section>
+                        <div class="skills-content">
+                           <h2 class="mb-3">JavaScript</h2>
+                           <div class="scroll_image_block">
+                              <img src="assets/images/js.png" alt="">
+                           </div>
+                        </div>
+                     </section>
+                     <section>
+                        <div class="skills-content">
+                           <h2 class="mb-3">Figma</h2>
+                           <div class="scroll_image_block">
+                              <img src="assets/images/figma-image.jpg" alt="">
+                           </div>
+                        </div>
+                     </section>
+                  </div>
+               </div>
             </div>
-        </div>
-        <div id="service" class="service overflow-hidden w-100 d-inline-block py-4">
+         </div>
+         <div id="service" class="service overflow-hidden w-100 d-inline-block py-4">
             <div class="containerdd overflow-hidden">
-                <div class="container overflow-hidden">
-                    <div class="section_heading">
-                        <h2 class="text-center">Our Service</h2>
-                    </div>
-                    <div class="Service_content">
-                        <div class="col-4 mb-4 px-2">
-                            <div class="card d-flex flex-column justify-content-between">
-                                <div class="hading_text">
-                                    <div class="card-title">
-                                        <h2>UI/UX Designer</h2>
-                                    </div>
-                                    <ul class="card_list ps-4">
-                                        <li>Creating user-friendly and visually appealing interfaces.</li>
-                                        <li>Wireframing and prototyping for clear design flow.</li>
-                                        <li>Designing with a focus on smooth navigation and accessibility.</li>
-                                        <li>Ensuring consistency in colors, typography, and layout.</li>
-                                        <li>Interactive mockups for client preview before development.</li>
-                                    </ul>
-                                </div>
-                                <div class="button">
-                                    <a href="#">View Design <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 24 24">
-                                            <g fill="none">
-                                                <path
-                                                    d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                                                <path fill="#fff"
-                                                    d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
-                                            </g>
-                                        </svg></a>
-                                </div>
-                            </div>
+               <div class="container overflow-hidden">
+                  <div class="section_heading">
+                     <h2 class="text-center">Our Service</h2>
+                  </div>
+                  <div class="Service_content">
+                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 px-2">
+                        <div class="card d-flex flex-column justify-content-between">
+                           <div class="hading_text">
+                              <div class="card-title">
+                                 <h2>UI/UX Designer</h2>
+                              </div>
+                              <ul class="card_list ps-4">
+                                 <li>Creating user-friendly and visually appealing interfaces.</li>
+                                 <li>Wireframing and prototyping for clear design flow.</li>
+                                 <li>Designing with a focus on smooth navigation and accessibility.</li>
+                                 <li>Ensuring consistency in colors, typography, and layout.</li>
+                                 <li>Interactive mockups for client preview before development.</li>
+                              </ul>
+                           </div>
+                           <div class="button">
+                              <a href="#">
+                                 View Design 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <g fill="none">
+                                       <path
+                                          d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                       <path fill="#fff"
+                                          d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
+                                    </g>
+                                 </svg>
+                              </a>
+                           </div>
                         </div>
-                        <div class="col-4 mb-4 px-2">
-                            <div class="card d-flex flex-column justify-content-between">
-                                <div class="heading_text">
-                                    <div class="card-title">
-                                        <h2>Responsive Web Design</h2>
-                                    </div>
-                                    <ul class="card_list ps-4">
-                                        <li>Mobile-first approach to ensure best performance on phones.</li>
-                                        <li>Adaptive layouts for desktop, tablet, and mobile devices.</li>
-                                        <li>Testing designs across multiple screen resolutions.</li>
-                                        <li>Maintaining speed and usability on all devices.</li>
-                                        <li>Cross-browser compatibility checks.</li>
-                                    </ul>
-                                </div>
-                                <div class="button">
-                                    <a href="#">View Design <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 24 24">
-                                            <g fill="none">
-                                                <path
-                                                    d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                                                <path fill="#fff"
-                                                    d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
-                                            </g>
-                                        </svg></a>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 px-2">
+                        <div class="card d-flex flex-column justify-content-between">
+                           <div class="heading_text">
+                              <div class="card-title">
+                                 <h2>Responsive Web Design</h2>
+                              </div>
+                              <ul class="card_list ps-4">
+                                 <li>Mobile-first approach to ensure best performance on phones.</li>
+                                 <li>Adaptive layouts for desktop, tablet, and mobile devices.</li>
+                                 <li>Testing designs across multiple screen resolutions.</li>
+                                 <li>Maintaining speed and usability on all devices.</li>
+                                 <li>Cross-browser compatibility checks.</li>
+                              </ul>
+                           </div>
+                           <div class="button">
+                              <a href="#">
+                                 View Design 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <g fill="none">
+                                       <path
+                                          d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                       <path fill="#fff"
+                                          d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
+                                    </g>
+                                 </svg>
+                              </a>
+                           </div>
                         </div>
-                        <div class="col-4 mb-4 px-2">
-                            <div class="card d-flex flex-column justify-content-between">
-                                <div class="heading_text">
-                                    <div class="card-title">
-                                        <h2>Custom Website Design</h2>
-                                    </div>
-                                    <ul class="card_list ps-4">
-                                        <li>Unique designs tailored to brand identity.</li>
-                                        <li>Personalized layouts instead of generic templates.</li>
-                                        <li>Integrating client’s vision with creative design elements.</li>
-                                        <li>Maintaining balance between creativity and usability.</li>
-                                        <li>Delivering a distinctive online presence.</li>
-                                    </ul>
-                                </div>
-
-                                <div class="button">
-                                    <a href="#">View Design <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 24 24">
-                                            <g fill="none">
-                                                <path
-                                                    d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                                                <path fill="#fff"
-                                                    d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
-                                            </g>
-                                        </svg></a>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 px-2">
+                        <div class="card d-flex flex-column justify-content-between">
+                           <div class="heading_text">
+                              <div class="card-title">
+                                 <h2>Custom Website Design</h2>
+                              </div>
+                              <ul class="card_list ps-4">
+                                 <li>Unique designs tailored to brand identity.</li>
+                                 <li>Personalized layouts instead of generic templates.</li>
+                                 <li>Integrating client’s vision with creative design elements.</li>
+                                 <li>Maintaining balance between creativity and usability.</li>
+                                 <li>Delivering a distinctive online presence.</li>
+                              </ul>
+                           </div>
+                           <div class="button">
+                              <a href="#">
+                                 View Design 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <g fill="none">
+                                       <path
+                                          d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                       <path fill="#fff"
+                                          d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
+                                    </g>
+                                 </svg>
+                              </a>
+                           </div>
                         </div>
-                        <div class="col-4 mb-4 px-2">
-                            <div class="card d-flex flex-column justify-content-between">
-                                <div class="heading_text">
-                                    <div class="card-title">
-                                        <h2>Website Redesign</h2>
-                                    </div>
-                                    <ul class="card_list ps-4">
-                                        <li>Modernizing outdated websites with fresh visuals.</li>
-                                        <li>Enhancing site navigation and content structure.</li>
-                                        <li>Improving speed and mobile responsiveness.</li>
-                                        <li>Updating design trends while keeping brand identity intact.</li>
-                                        <li>Boosting overall user engagement and conversions.</li>
-                                    </ul>
-                                </div>
-
-                                <div class="button">
-                                    <a href="#">View Design <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 24 24">
-                                            <g fill="none">
-                                                <path
-                                                    d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                                                <path fill="#fff"
-                                                    d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
-                                            </g>
-                                        </svg></a>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 px-2">
+                        <div class="card d-flex flex-column justify-content-between">
+                           <div class="heading_text">
+                              <div class="card-title">
+                                 <h2>Website Redesign</h2>
+                              </div>
+                              <ul class="card_list ps-4">
+                                 <li>Modernizing outdated websites with fresh visuals.</li>
+                                 <li>Enhancing site navigation and content structure.</li>
+                                 <li>Improving speed and mobile responsiveness.</li>
+                                 <li>Updating design trends while keeping brand identity intact.</li>
+                                 <li>Boosting overall user engagement and conversions.</li>
+                              </ul>
+                           </div>
+                           <div class="button">
+                              <a href="#">
+                                 View Design 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <g fill="none">
+                                       <path
+                                          d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                       <path fill="#fff"
+                                          d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
+                                    </g>
+                                 </svg>
+                              </a>
+                           </div>
                         </div>
-                        <div class="col-4 mb-4 px-2">
-                            <div class="card d-flex flex-column justify-content-between">
-                                <div class="heading_text">
-                                    <div class="card-title">
-                                        <h2>Landing Page Design</h2>
-                                    </div>
-                                    <ul class="card_list ps-4">
-                                        <li>Focused single-page designs for campaigns.</li>
-                                        <li>Optimized call-to-action (CTA) placements.</li>
-                                        <li>Clean layouts that drive user attention to goals.</li>
-                                        <li>High-converting design principles for lead generation.</li>
-                                        <li>A/B testing variations for better performance.</li>
-                                    </ul>
-                                </div>
-
-                                <div class="button">
-                                    <a href="#">View Design <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 24 24">
-                                            <g fill="none">
-                                                <path
-                                                    d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                                                <path fill="#fff"
-                                                    d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
-                                            </g>
-                                        </svg></a>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 px-2">
+                        <div class="card d-flex flex-column justify-content-between">
+                           <div class="heading_text">
+                              <div class="card-title">
+                                 <h2>Landing Page Design</h2>
+                              </div>
+                              <ul class="card_list ps-4">
+                                 <li>Focused single-page designs for campaigns.</li>
+                                 <li>Optimized call-to-action (CTA) placements.</li>
+                                 <li>Clean layouts that drive user attention to goals.</li>
+                                 <li>High-converting design principles for lead generation.</li>
+                                 <li>A/B testing variations for better performance.</li>
+                              </ul>
+                           </div>
+                           <div class="button">
+                              <a href="#">
+                                 View Design 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <g fill="none">
+                                       <path
+                                          d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                       <path fill="#fff"
+                                          d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
+                                    </g>
+                                 </svg>
+                              </a>
+                           </div>
                         </div>
-                        <div class="col-4 mb-4 px-2">
-                            <div class="card d-flex flex-column justify-content-between">
-                                <div class="heading_text">
-                                    <div class="card-title">
-                                        <h2>E-commerce Web Design</h2>
-                                    </div>
-                                    <ul class="card_list ps-4">
-                                        <li>Custom online store designs (Shopify, WooCommerce, etc.).</li>
-                                        <li>Attractive product page layouts with clear CTAs.</li>
-                                        <li>Easy navigation for categories and filters.</li>
-                                        <li>Smooth checkout process for better conversions.</li>
-                                        <li>Secure and user-friendly shopping experience.</li>
-                                    </ul>
-                                </div>
-
-                                <div class="button">
-                                    <a href="#">View Design <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 24 24">
-                                            <g fill="none">
-                                                <path
-                                                    d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                                                <path fill="#fff"
-                                                    d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
-                                            </g>
-                                        </svg></a>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 px-2">
+                        <div class="card d-flex flex-column justify-content-between">
+                           <div class="heading_text">
+                              <div class="card-title">
+                                 <h2>E-commerce Web Design</h2>
+                              </div>
+                              <ul class="card_list ps-4">
+                                 <li>Custom online store designs (Shopify, WooCommerce, etc.).</li>
+                                 <li>Attractive product page layouts with clear CTAs.</li>
+                                 <li>Easy navigation for categories and filters.</li>
+                                 <li>Smooth checkout process for better conversions.</li>
+                                 <li>Secure and user-friendly shopping experience.</li>
+                              </ul>
+                           </div>
+                           <div class="button">
+                              <a href="#">
+                                 View Design 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <g fill="none">
+                                       <path
+                                          d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                       <path fill="#fff"
+                                          d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
+                                    </g>
+                                 </svg>
+                              </a>
+                           </div>
                         </div>
-                        <div class="col-4 mb-4 px-2">
-                            <div class="card d-flex flex-column justify-content-between">
-                                <div class="heading_text">
-                                    <div class="card-title">
-                                        <h2>Corporate & Portfolio Websites</h2>
-                                    </div>
-                                    <ul class="card_list ps-4">
-                                        <li>Professional designs that reflect company values.</li>
-                                        <li>Creative portfolio layouts for showcasing work.</li>
-                                        <li>Easy-to-manage and update structures.</li>
-                                        <li>Clear information architecture for business websites.</li>
-                                        <li>Trust-building visuals and design consistency.</li>
-                                    </ul>
-                                </div>
-
-                                <div class="button">
-                                    <a href="#">View Design <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 24 24">
-                                            <g fill="none">
-                                                <path
-                                                    d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                                                <path fill="#fff"
-                                                    d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
-                                            </g>
-                                        </svg></a>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 px-2">
+                        <div class="card d-flex flex-column justify-content-between">
+                           <div class="heading_text">
+                              <div class="card-title">
+                                 <h2>Corporate & Portfolio Websites</h2>
+                              </div>
+                              <ul class="card_list ps-4">
+                                 <li>Professional designs that reflect company values.</li>
+                                 <li>Creative portfolio layouts for showcasing work.</li>
+                                 <li>Easy-to-manage and update structures.</li>
+                                 <li>Clear information architecture for business websites.</li>
+                                 <li>Trust-building visuals and design consistency.</li>
+                              </ul>
+                           </div>
+                           <div class="button">
+                              <a href="#">
+                                 View Design 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <g fill="none">
+                                       <path
+                                          d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                       <path fill="#fff"
+                                          d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
+                                    </g>
+                                 </svg>
+                              </a>
+                           </div>
                         </div>
-                        <div class="col-4 mb-4 px-2">
-                            <div class="card d-flex flex-column justify-content-between">
-                                <div class="heading_text">
-                                    <div class="card-title">
-                                        <h2>Graphic & Visual Design Support</h2>
-                                    </div>
-                                    <ul class="card_list ps-4">
-                                        <li>Custom icons, illustrations, and banners.</li>
-                                        <li>Consistent brand identity across website graphics.</li>
-                                        <li>Engaging visuals that support website storytelling.</li>
-                                        <li>Infographics for complex data presentation.</li>
-                                        <li>Creative imagery to make websites stand out.</li>
-                                    </ul>
-                                </div>
-
-                                <div class="button">
-                                    <a href="#">View Design <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 24 24">
-                                            <g fill="none">
-                                                <path
-                                                    d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                                                <path fill="#fff"
-                                                    d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
-                                            </g>
-                                        </svg></a>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 px-2">
+                        <div class="card d-flex flex-column justify-content-between">
+                           <div class="heading_text">
+                              <div class="card-title">
+                                 <h2>Graphic & Visual Design Support</h2>
+                              </div>
+                              <ul class="card_list ps-4">
+                                 <li>Custom icons, illustrations, and banners.</li>
+                                 <li>Consistent brand identity across website graphics.</li>
+                                 <li>Engaging visuals that support website storytelling.</li>
+                                 <li>Infographics for complex data presentation.</li>
+                                 <li>Creative imagery to make websites stand out.</li>
+                              </ul>
+                           </div>
+                           <div class="button">
+                              <a href="#">
+                                 View Design 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <g fill="none">
+                                       <path
+                                          d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                       <path fill="#fff"
+                                          d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
+                                    </g>
+                                 </svg>
+                              </a>
+                           </div>
                         </div>
-                        <div class="col-4 mb-4 px-2">
-                            <div class="card d-flex flex-column justify-content-between">
-                                <div class="heading_text">
-                                    <div class="card-title">
-                                        <h2>Website Maintenance</h2>
-                                    </div>
-                                    <ul class="card_list ps-4">
-                                        <li>Regular updates to design and content.</li>
-                                        <li>Fixing bugs, broken links, or UI issues.</li>
-                                        <li>Adding new pages or features as required.</li>
-                                        <li>Continuous performance and speed optimization.</li>
-                                        <li>Ongoing support for smooth website functioning.</li>
-                                    </ul>
-                                </div>
-
-                                <div class="button">
-                                    <a href="#">View Design <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 24 24">
-                                            <g fill="none">
-                                                <path
-                                                    d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                                                <path fill="#fff"
-                                                    d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
-                                            </g>
-                                        </svg></a>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 px-2">
+                        <div class="card d-flex flex-column justify-content-between">
+                           <div class="heading_text">
+                              <div class="card-title">
+                                 <h2>Website Maintenance</h2>
+                              </div>
+                              <ul class="card_list ps-4">
+                                 <li>Regular updates to design and content.</li>
+                                 <li>Fixing bugs, broken links, or UI issues.</li>
+                                 <li>Adding new pages or features as required.</li>
+                                 <li>Continuous performance and speed optimization.</li>
+                                 <li>Ongoing support for smooth website functioning.</li>
+                              </ul>
+                           </div>
+                           <div class="button">
+                              <a href="#">
+                                 View Design 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <g fill="none">
+                                       <path
+                                          d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                       <path fill="#fff"
+                                          d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
+                                    </g>
+                                 </svg>
+                              </a>
+                           </div>
                         </div>
-                    </div>
-                </div>
-
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-        <!-- contact us  -->
-        <div id="contact" class="contact w-100 d-inline-block mb-5">
+         </div>
+         <!-- contact us  -->
+         <div id="contact" class="contact w-100 d-inline-block mb-5">
             <div class="container">
-                <div class="section_heading">
-                    <h2>Contact Us</h2>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="contact_center flex-column">
-                            <div class="text-center w-100 d-inline-block">
-                                <h3>Find Now</h3>
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                <div class="col-4">
-                                    <div class="card h-100 p-4">
-                                        <h2 class="mb-3">Girraj Designer (Design Beat)</h2>
-                                        <p>
-                                            <a class="d-block" target="_blank"
-                                                href="www.linkedin.com/in/girraj-kushwah">Linkdin</a>
-                                            <a class="d-block" href="#">Resume</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="card h-100 p-4">
-                                        <h2 class="mb-3">Email</h2>
-                                        <p>
-                                            <a class="d-block"
-                                                href="mailto:kushwahgirraj46@gmail.com">Kushwahgirraj46@gmail.com</a>
-                                            <a class="d-block"
-                                                href="mailto:girrajsingh7898@gmail.com">girrajsingh7898@gmail.com</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="card h-100 p-4">
-                                        <h2 class="mb-3">Phone Number</h2>
-                                        <p><a href="#9685244823">9685244823</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
+               <div class="section_heading">
+                  <h2>Contact Us</h2>
+               </div>
+               <div class="row">
+                  <div class="col-12">
+                     <div class="contact_center flex-column">
+                        <div class="text-center w-100 d-inline-block">
+                           <h3>Find Now</h3>
                         </div>
-                    </div>
-                </div>
+                        <div class="container p-0">
+                           <div class="row">
+                              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                 <div class="card h-100 p-4">
+                                    <h2 class="mb-3">Girraj Designer (Design Beat)</h2>
+                                    <p>
+                                       <a class="d-block" target="_blank"
+                                          href="www.linkedin.com/in/girraj-kushwah">Linkdin</a>
+                                       <a class="d-block" href="#">Resume</a>
+                                    </p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                 <div class="card h-100 p-4">
+                                    <h2 class="mb-3">Email</h2>
+                                    <p>
+                                       <a class="d-block"
+                                          href="mailto:kushwahgirraj46@gmail.com">Kushwahgirraj46@gmail.com</a>
+                                       <a class="d-block"
+                                          href="mailto:girrajsingh7898@gmail.com">girrajsingh7898@gmail.com</a>
+                                    </p>
+                                 </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                 <div class="card h-100 p-4">
+                                    <h2 class="mb-3">Phone Number</h2>
+                                    <p><a href="#9685244823">9685244823</a></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-
-
-    <!-- side  drawer -->
-
-
-    <div class="full_side_drawer d-none">
-        <div class="profile">
+         </div>
+      </div>
+      <!-- side  drawer -->
+      <div class="full_side_drawer d-none">
+         <div class="profile">
             <div class="close_button">
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <g fill="#fff" fill-rule="evenodd">
-                            <path
-                                d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                            <path fill="currentColor"
-                                d="m12 13.414l5.657 5.657a1 1 0 0 0 1.414-1.414L13.414 12l5.657-5.657a1 1 0 0 0-1.414-1.414L12 10.586L6.343 4.929A1 1 0 0 0 4.93 6.343L10.586 12l-5.657 5.657a1 1 0 1 0 1.414 1.414z" />
-                        </g>
-                    </svg></a>
+               <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                     <g fill="#fff" fill-rule="evenodd">
+                        <path
+                           d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                        <path fill="currentColor"
+                           d="m12 13.414l5.657 5.657a1 1 0 0 0 1.414-1.414L13.414 12l5.657-5.657a1 1 0 0 0-1.414-1.414L12 10.586L6.343 4.929A1 1 0 0 0 4.93 6.343L10.586 12l-5.657 5.657a1 1 0 1 0 1.414 1.414z" />
+                     </g>
+                  </svg>
+               </a>
             </div>
             <div class="side_top">
-                <div class="profile_image mb-4">
-                    <img src="assets/images/profile_image.png" alt="">
-                </div>
-                <div class="profile_name text-center">
-                    <h3 class="mb-2">Girraj Kushwah</h3>
-                    <p>Web Designer and UI & UX Designer </p>
-                </div>
+               <div class="profile_image mb-4">
+                  <img src="assets/images/profile_image.png" alt="">
+               </div>
+               <div class="profile_name text-center">
+                  <h3 class="mb-2">Girraj Kushwah</h3>
+                  <p>Web Designer and UI & UX Designer </p>
+               </div>
             </div>
             <div class="side_bottom">
-                <div class="button">
-                    <button>Download</button>
-                </div>
+               <div class="button">
+                  <button>Download</button>
+               </div>
             </div>
-        </div>
-    </div>
+         </div>
+      </div>
+      <script src="assets/js/custome.js"></script>
+      <script>
+         function handleScroll() {
+             try {
+                 gsap.registerPlugin(ScrollTrigger);
+         
+                 const animationContainer = document.querySelector("#wheel");
+         
+                 let lottieSrc = animationContainer.getAttribute("lottieSrc");
+                 if (window.innerWidth > 785) {
+                     lottieSrc = animationContainer.getAttribute("lottieSrcPC");
+                 }
+                 console.log({
+                     lottieSrc
+                 })
+         
+                 if (!lottieSrc) console.error("lottieSrc not found.");
+         
+                 const animationData = {
+                     container: animationContainer,
+                     renderer: "svg",
+                     loop: false,
+                     autoplay: false,
+                     path: lottieSrc
+                 };
+         
+                 const anim = lottie.loadAnimation(animationData);
+                 console.log({
+                     anim
+                 })
+         
+                 ScrollTrigger.create({
+                     trigger: document.querySelector(".wheel-container"),
+                     start: `top top`,
+                     end: "bottom bottom",
+                     scrub: true,
+                     onUpdate: (self) => {
+                         const scrollProgress = (self.progress * 100).toFixed(2);
+         
+                         const vWidth = window.innerWidth;
+                         let progress = vWidth < 786 ? +scrollProgress + 10 : +scrollProgress + 10;
+                         progress = Math.min(120, progress);
+                         console.log({
+                             scrollProgress,
+                             vWidth,
+                             progress
+                         });
+         
+                         anim.goToAndStop(progress, true);
+                     }
+                 });
+             } catch (err) {
+                 console.error(err);
+             }
+         }
+         
+         
+         gsap.registerPlugin(ScrollTrigger);
+         gsap.set(".section_heading h2", {
+             backgroundSize: "0%"
+         });
+         const textElements = gsap.utils.toArray(".section_heading h2");
+         
+         textElements.forEach((text) => {
+             gsap.fromTo(
+                 text,
+                 { backgroundSize: "0%" },
+                 {
+                     backgroundSize: "100%",
+                     ease: "none",
+                     scrollTrigger: {
+                         trigger: text,
+                         start: "center 80%",
+                         end: "center 50%",
+                         scrub: true,
+                     }
+                 }
+             );
+         });
+         
+         
+         gsap.registerPlugin(ScrollTrigger);
+         
+         ScrollTrigger.create({
+             trigger: "body", 
+             start: "top+=300 top", 
+             onEnter: () => document.querySelector("body").classList.add("header_sticky"),
+             onLeaveBack: () => document.querySelector("body").classList.remove("header_sticky")
+         });
 
-
-
-
-    <script src="assets/js/custome.js"></script>
-
-
-    <script>
-        function handleScroll() {
-            try {
-                gsap.registerPlugin(ScrollTrigger);
-
-                const animationContainer = document.querySelector("#wheel");
-
-                let lottieSrc = animationContainer.getAttribute("lottieSrc");
-                if (window.innerWidth > 785) {
-                    lottieSrc = animationContainer.getAttribute("lottieSrcPC");
-                }
-                console.log({
-                    lottieSrc
-                })
-
-                if (!lottieSrc) console.error("lottieSrc not found.");
-
-                const animationData = {
-                    container: animationContainer,
-                    renderer: "svg",
-                    loop: false,
-                    autoplay: false,
-                    path: lottieSrc
-                };
-
-                const anim = lottie.loadAnimation(animationData);
-                console.log({
-                    anim
-                })
-
-                ScrollTrigger.create({
-                    trigger: document.querySelector(".wheel-container"),
-                    start: `top top`,
-                    end: "bottom bottom",
-                    scrub: true,
-                    onUpdate: (self) => {
-                        const scrollProgress = (self.progress * 100).toFixed(2);
-
-                        const vWidth = window.innerWidth;
-                        let progress = vWidth < 786 ? +scrollProgress + 10 : +scrollProgress + 10;
-                        progress = Math.min(120, progress);
-                        console.log({
-                            scrollProgress,
-                            vWidth,
-                            progress
-                        });
-
-                        anim.goToAndStop(progress, true);
-                    }
-                });
-            } catch (err) {
-                console.error(err);
-            }
-        }
-
-
-        gsap.registerPlugin(ScrollTrigger);
-        gsap.set(".section_heading h2", {
-            backgroundSize: "0%"
-        });
-        const textElements = gsap.utils.toArray(".section_heading h2");
-
-        textElements.forEach((text) => {
-            gsap.fromTo(
-                text,
-                { backgroundSize: "0%" },
-                {
-                    backgroundSize: "100%",
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: text,
-                        start: "center 80%",
-                        end: "center 50%",
-                        scrub: true,
-                    }
-                }
-            );
-        });
-
-
-        gsap.registerPlugin(ScrollTrigger);
-
-        ScrollTrigger.create({
-            trigger: "body", // element to target
-            start: "top+=300 top", // when page scrolled 300px
-            onEnter: () => document.querySelector("body").classList.add("header_sticky"),
-            onLeaveBack: () => document.querySelector("body").classList.remove("header_sticky")
-        });
-
-
-        document.addEventListener("DOMContentLoaded", handleScroll);
-    </script>
-
-</body>
-
+ 
+         
+         document.addEventListener("DOMContentLoaded", handleScroll);
+      </script>
+   </body>
 </html>

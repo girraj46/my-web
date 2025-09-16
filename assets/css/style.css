@@ -24,13 +24,14 @@ body {
     width: 100%;
     height: 100%;
     display: inline-block;
-    /* background: #000000d6; */
     font-family: lobsterregular;
     color: #fff;
     transition: .3s;
-    /* overflow: hidden; */
-    /* cursor: none; */
 }
+
+/* #hero{
+    height: 100vh;
+} */
 
 /* .main{
     overflow: auto;
@@ -74,10 +75,10 @@ a {
     text-decoration: none;
     transition: .3s;
 }
-a:hover{
+
+a:hover {
     color: green;
 }
-
 
 
 /* cursor css */
@@ -128,23 +129,30 @@ a:hover{
     opacity: 0.08;
 }
 
-.video{
+.video {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: inline-block;
     position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
 }
-.video::after{
+
+.video video {
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+}
+
+.video::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-      background: #000000c4;
+    background: #000000c4;
 
 }
 
@@ -158,7 +166,6 @@ ul li a {
     font-family: system-ui;
     font-weight: 600;
 }
-
 
 
 /* 
@@ -192,29 +199,28 @@ hero css
     animation: gradient_color 3s ease-in-out infinite alternate;
 
 }
-    
-@keyframes gradient_color  {
-    0%{
+
+@keyframes gradient_color {
+    0% {
         background-color: red;
     }
-    25%{
+
+    25% {
         background-color: green;
     }
-    50%{
+
+    50% {
         background-color: blue;
     }
-    75%{
+
+    75% {
         background-color: white;
     }
-    100%{
+
+    100% {
         background-color: yellow;
     }
 }
-
-
-
-
-
 
 
 /* 
@@ -222,7 +228,6 @@ hero css
 Skills css
 ================================================
  */
-
 
 
 .skills {
@@ -251,8 +256,8 @@ Skills css
 
 .skills_icon_rotate .icon {
     /* position: absolute; */
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: contain;
     background: #fff;
@@ -296,7 +301,7 @@ Skills css
 
 /* active highlight */
 .skills_icon_rotate .icon.active {
-    transform: scale(1.2); 
+    transform: scale(1.2);
     box-shadow: 0 0 20px #00ffcc;
     z-index: 10;
     opacity: 1;
@@ -325,7 +330,7 @@ Skills css
 .skills-content {
     width: 100%;
     font-size: 18px;
-    background: #1f1f1f;
+    background: #1f1f1f75;
     padding: 30px;
     border-radius: 15px;
     opacity: 0.4;
@@ -341,13 +346,15 @@ Skills css
 .right_skills .scroll_image_block {
     width: 100%;
     display: inline-block;
+    background: #000;
+    font-family: system-ui;
 }
 
-.scroll_image_block img{
-   height: 270px;
+.scroll_image_block img {
+    height: 270px;
 }
 
-.skills_icon_rotated .icon.active{
+.skills_icon_rotated .icon.active {
     box-shadow: 0 0 10px #ddd;
 }
 
@@ -388,7 +395,8 @@ Service css
     backdrop-filter: blur(6px);
     transition: .3s;
 }
-.Service_content .card:hover{
+
+.Service_content .card:hover {
     background: #000000;
     transform: translateY(-15px);
 }
@@ -401,12 +409,6 @@ Project css
  */
 
 
-
-
-
-
-
-
 /* 
 ================================================
 Contact css
@@ -417,12 +419,12 @@ Contact css
     color: #222;
     font-weight: 600;
     letter-spacing: 8px;
-    background: linear-gradient(to right,#ffffff,#ffffff)no-repeat;
-	-webkit-background-clip: text;
-	background-clip: text;
-	background-size: 0%;
-	color: rgba(250, 250, 250, 0.2);
-	transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+    background: linear-gradient(to right, #ffffff, #ffffff)no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+    color: rgba(250, 250, 250, 0.2);
+    transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
 }
 
 .section_heading {
@@ -451,26 +453,14 @@ Contact css
 .contact_center:has(.card:hover) .card {
     filter: blur(5px);
 }
-.contact_center .card:hover{
-   filter: none !important;
-   background: #000;
+
+.contact_center .card:hover {
+    filter: none !important;
+    background: #000;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.icon_box{
+.icon_box {
     position: absolute !important;
     width: 100%;
     height: 100%;
@@ -478,7 +468,8 @@ Contact css
     top: 0;
     left: 0;
 }
-.icon{
+
+.icon {
     position: absolute;
     top: -30px;
     width: 80px;
@@ -492,65 +483,69 @@ Contact css
     border-radius: 50%;
     /* overflow: hidden; */
 }
-.icon.active{
-   transform: scale(1); 
-   filter: brightness(1);
+
+.icon.active {
+    transform: scale(1);
+    filter: brightness(1);
 }
-.icon_2{
+
+.icon_2 {
     top: calc(17% - 50px);
     right: 50px;
 }
-.icon_3{
-    top:calc(50% - 50px);
-    right:0px;
+
+.icon_3 {
+    top: calc(50% - 50px);
+    right: 0px;
 }
-.icon_4{
+
+.icon_4 {
     top: auto;
     bottom: calc(23% - 50px);
     right: 60px;
 }
-.icon_5{
+
+.icon_5 {
     top: auto;
     bottom: 0px;
 }
-img.icon.icon_1.active{
+
+img.icon.icon_1.active {
     top: -30px;
 }
-.icon img{
+
+.icon img {
     border-radius: 50%;
 }
-.inner-arc{
-  position: absolute;
+
+.inner-arc {
+    position: absolute;
     left: 55px;
     width: 240px;
     height: 240px;
     border-radius: 50%;
     z-index: 9;
-    background-color: #000000 ;
+    background-color: #000000;
     top: 55px;
     outline: 40px solid #000000;
 }
+
 .circle {
     width: 350px;
     height: 350px;
     border-radius: 50%;
     background: #d3d3d3;
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%); 
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
     position: relative;
     z-index: -1;
 }
-.left_side_text{
+
+.left_side_text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
-
-
-
-
 
 
 /* 
@@ -568,25 +563,135 @@ profile drawer css
     background: #000000db;
     /* display: none; */
 }
-.full_side_drawer .profile{
+
+.full_side_drawer .profile {
     width: 380px;
     height: 100%;
     background: #000;
     padding: 40px;
     box-shadow: 0 0 10px #222;
 }
-.full_side_drawer .profile .profile_image{
+
+.full_side_drawer .profile .profile_image {
     width: 220px;
     margin: auto;
 }
-.close_button{
+
+.close_button {
     position: absolute;
     top: 2rem;
     right: 2rem;
 }
-/* .full_side_drawer .profile img{
-    width: 220px;
-} */
+
+@media screen and (max-width:991px) {
+    .hero_content h2 {
+        font-size: 72px;
+    }
+
+    .section_heading h2 {
+        font-size: 48px;
+    }
+
+    .skills-icons {
+        margin-right: 0px;
+    }
 
 
+    .skills-icons {
+        min-width: 260px;
+        min-height: 260px;
+    }
 
+    .icon_1 {
+        top: -20px;
+        right: 120px;
+    }
+
+    .icon_2 {
+        top: calc(23% - 46px);
+        right: 35px;
+    }
+
+    .icon_3 {
+        top: calc(50% - 25px);
+    }
+
+    .icon_4 {
+        bottom: calc(30% - 50px);
+        right: 42px;
+    }
+
+    .icon_5 {
+        right: 130px;
+    }
+
+    .right_skills .scroll_image_block {
+        max-height: 240px;
+        overflow: hidden;
+        display: inline-block;
+        padding: 20px 30px !important;
+    }
+
+    .inner-arc {
+        min-width: 140px;
+        min-height: 140px;
+        top: 50px;
+        left: 50px;
+    }
+
+    .circle {
+        width: 240px;
+        height: 240px;
+    }
+
+    .icon {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .skills {
+        flex-direction: column;
+    }
+
+    .skills-icons {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .right_skills .scroll_image_block {
+        max-height: 140px;
+    }
+
+    .right_skills {
+        padding-left: 0;
+        max-width: 100%;
+    }
+
+    .hero_content {
+        padding: 20px 0;
+    }
+
+    .hero_content h2 {
+        font-size: 48px;
+    }
+
+    .section_heading h2 {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    html,
+    body {
+        background: #000;
+    }
+
+    .skills-content,
+    .Service_content .card,
+    .contact_center {
+        padding: 16px;
+    }
+}
