@@ -450,6 +450,7 @@ Contact css
     font-weight: 600;
     backdrop-filter: blur(10px);
     transition: .3s;
+    position: relative;
 }
 
 
@@ -702,4 +703,13 @@ profile drawer css
     .video{
         display: none   ;
     }
+}
+
+.contact_center .card svg{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.contact_center .card:hover svg path{
+    fill: #1d991d;
 }
