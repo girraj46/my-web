@@ -77,6 +77,12 @@ timeManagement.from(".menu li", {
    stagger: .1,
    duration: .5,
 })
+timeManagement.from(".hero_content h2", {
+   y: -100,
+   opacity: 0,
+   stagger: .1,
+   duration: .5,
+})
 
 gsap.from(".mane-text div", {
    y: -100,
