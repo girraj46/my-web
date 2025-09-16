@@ -697,6 +697,6 @@ profile drawer css
 }
 @media screen and(max-width:576px) {
     .video{
-        display: none;
+        display: none   ;
     }
 }
