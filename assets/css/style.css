@@ -337,6 +337,9 @@ Skills css
     transform: translateY(50px);
     transition: all 0.5s ease;
 }
+.card-title,.contact_center h3,.skills-content h2{
+    color: #4dff4d;
+}
 
 .skills-content.active {
     opacity: 1;
