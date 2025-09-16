@@ -695,3 +695,8 @@ profile drawer css
         padding: 16px;
     }
 }
+@media screen and(max-width:576px) {
+    .video{
+        display: none;
+    }
+}
