@@ -228,7 +228,9 @@ hero css
 Skills css
 ================================================
  */
-
+.main_skills{
+    padding: 50px 0;
+}
 
 .skills {
     display: flex;
@@ -367,7 +369,11 @@ Skills css
 Service css
 ================================================
  */
-
+.service{
+    padding: 50px 0;
+    width: 100%;
+    display: inline-block;
+}
 .Service_content .card ul li {
     font-family: system-ui;
     list-style: auto;
@@ -417,6 +423,11 @@ Project css
 Contact css
 ================================================
  */
+ .contact{
+    width: 100%;
+    display: inline-block;
+    padding: 50px 0;
+ }
 .section_heading h2 {
     font-size: 72px;
     color: #222;
@@ -673,10 +684,6 @@ profile drawer css
     .right_skills {
         padding-left: 0;
         max-width: 100%;
-    }
-
-    .hero_content {
-        padding: 20px 0;
     }
 
     .hero_content h2 {

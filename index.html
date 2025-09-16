@@ -160,7 +160,7 @@
                </div>
             </div>
          </div>
-         <div id="service" class="service overflow-hidden w-100 d-inline-block py-4">
+         <div id="service" class="service overflow-hidden w-100 d-inline-block">
             <div class="containerdd overflow-hidden">
                <div class="container overflow-hidden">
                   <div class="section_heading">
@@ -442,7 +442,7 @@
             </div>
          </div>
          <!-- contact us  -->
-         <div id="contact" class="contact w-100 d-inline-block mb-5">
+         <div id="contact" class="contact w-100 d-inline-block">
             <div class="container">
                <div class="section_heading">
                   <h2>Contact Us</h2>
@@ -583,27 +583,30 @@
          
          
          gsap.registerPlugin(ScrollTrigger);
-         gsap.set(".section_heading h2", {
-             backgroundSize: "0%"
-         });
-         const textElements = gsap.utils.toArray(".section_heading h2");
-         
-         textElements.forEach((text) => {
-             gsap.fromTo(
-                 text,
-                 { backgroundSize: "0%" },
-                 {
-                     backgroundSize: "100%",
-                     ease: "none",
-                     scrollTrigger: {
-                         trigger: text,
-                         start: "center 80%",
-                         end: "center 50%",
-                         scrub: true,
-                     }
-                 }
-             );
-         });
+
+// selectors for multiple sections
+const textElements = gsap.utils.toArray(
+  ".section_heading h2, .contact, .service_section h2"
+);
+
+// apply effect
+textElements.forEach((text) => {
+  gsap.fromTo(
+    text,
+    { backgroundSize: "0%" },
+    {
+      backgroundSize: "100%",
+      ease: "none",
+      scrollTrigger: {
+        trigger: text,
+        start: "center 80%",
+        end: "center 50%",
+        scrub: true,
+      },
+    }
+  );
+});
+
          
          
          gsap.registerPlugin(ScrollTrigger);
