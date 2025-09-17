@@ -84,7 +84,7 @@ a:hover {
 .body_bg {
          position: fixed;
          width: 100%;
-         background: #333;
+         background: #000;
          overflow: hidden;
          background-size: cover;
          background-position: center center;
@@ -632,11 +632,6 @@ profile drawer css
     .section_heading h2 {
         font-size: 32px;
         letter-spacing: 2px;
-    }
-
-    html,
-    body {
-        background: #000;
     }
 
     .skills-content,
