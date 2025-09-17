@@ -27,6 +27,7 @@ body {
     font-family: lobsterregular;
     color: #fff;
     transition: .3s;
+    scroll-behavior: smooth;
 }
 
 /* #hero{
@@ -217,40 +218,6 @@ Skills css
     opacity: .3;
 }
 
-/* place in circle */
-
-/* .skills_icon_rotate .icon:nth-child(1) {
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    opacity: .3;
-}
-
-.skills_icon_rotate .icon:nth-child(2) {
-    top: 20%;
-    left: 0;
-    transform: translate(0, -50%);
-}
-
-.skills_icon_rotate .icon:nth-child(3) {
-    bottom: 20%;
-    left: 0;
-    transform: translate(0, 50%);
-}
-
-.skills_icon_rotate .icon:nth-child(4) {
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
-.skills_icon_rotate .icon:nth-child(5) {
-    top: 20%;
-    left: 0;
-    transform: translate(0, -50%);
-} */
-
-/* active highlight */
 .skills_icon_rotate .icon.active {
     transform: scale(1.2);
     box-shadow: 0 0 20px #00ffcc;
@@ -272,15 +239,8 @@ Skills css
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-/* .skills-content.active {
-    opacity: 1;
-    transform: translateY(0);
-} */
-
-
 .skills-content {
     width: 100%;
-    /* font-size: 18px; */
     background: #1f1f1f75;
     padding: 30px;
     border-radius: 15px;
@@ -366,6 +326,82 @@ Project css
 ================================================
  */
 
+
+ .portfolio .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+         }
+        .portfolio  .swiper {
+            width: 500px;
+            height: 300px;
+            padding: 40px;
+         }
+
+        .portfolio  .swiper-slide {
+            position: relative;
+            border-radius: 10px;
+            user-select: none;
+            transition: .3s;
+         }
+
+        .portfolio  .swiper-slide img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            transition: .3s;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+         }
+         .portfolio  .swiper-slide:hover img{
+            top: auto;
+            bottom: 0;
+        }
+
+        .portfolio  .img-position {
+            object-position: 50% 0%;
+         }
+
+        .portfolio  .overlay {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+         }
+
+        .portfolio  .overlay span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #fff;
+            padding: 7px 18px;
+            margin: 10px;
+            border-radius: 20px;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            font-family: inherit;
+            background: rgba(255, 255, 255, 0.095);
+            box-shadow: inset 2px -2px 20px rgba(214, 214, 214, 0.2),
+               inset -3px 3px 3px rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(74px);
+         }
+
+        .portfolio  .overlay h2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: #fff;
+            font-weight: 400;
+            font-size: 1.1rem;
+            line-height: 1.4;
+            margin: 0 0 20px 20px;
+         }
 
 /* 
 ================================================
@@ -551,6 +587,13 @@ profile drawer css
     .hero_content h2 {
         font-size: 72px;
     }
+     .portfolio .content{
+        flex-wrap: wrap;
+     }
+     .portfolio .swiper{
+        width: 560px;
+        height: 400px;
+     }
 
     .section_heading h2 {
         font-size: 48px;
@@ -658,6 +701,10 @@ profile drawer css
         width: 50px;
         height: 50px;
     }
+    .portfolio .swiper{
+        width: 320px;
+        height: 300px;
+     }
 }
 
 .contact_center .card svg{
