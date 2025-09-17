@@ -438,6 +438,9 @@
       </div>
       <section class="portfolio" id="portfolio">
          <div class="container">
+            <div class="section_heading">
+                  <h2 class="text-center">Our Portfolio</h2>
+               </div>
             <div class="content">
                <div class="info">
                   <div style="font-family: system-ui;">
@@ -693,10 +696,9 @@
 
       // selectors for multiple sections
       const textElements = gsap.utils.toArray(
-         ".section_heading h2"
+         ".section_heading h2",
       );
 
-      // apply effect
       textElements.forEach((text) => {
          gsap.fromTo(
             text,
